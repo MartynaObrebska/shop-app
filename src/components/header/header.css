@@ -1,0 +1,54 @@
+div.header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+div.menu {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  align-items: center;
+  align-content: flex-end;
+}
+
+div.menu .selections {
+  flex-grow: 1;
+  display: flex;
+}
+
+div.menu button.shoppingBasketBtn {
+  color: #555;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  div.menu button.shoppingBasketBtn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  div.menu .selections {
+    flex-direction: column;
+  }
+  div.menu button.shoppingBasketBtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,49 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0;
+}
+
+div#shop {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  width: 800px;
+  text-align: center;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+button {
+  height: 30px;
+  border-radius: 10px 10px;
+  font-size: 14px;
+  color: white;
+  background-color: #555;
+  border: 1px solid #555;
+}
+
+@media (max-width: 800px) {
+  div#shop {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  button {
+    height: 24px;
+    border-radius: 6px 6px;
+    font-size: 12px;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

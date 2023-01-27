@@ -1,0 +1,30 @@
+div.selection {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+div.selection label {
+  width: 80px;
+  text-align: right;
+}
+
+div.selection select {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 30px;
+  width: 50px;
+  margin: 15px;
+  font-size: 14px;
+  border: 1px solid black;
+}
+
+@media (max-width: 800px) {
+  div.selection label {
+    width: 60px;
+  }
+  div.selection select {
+    height: 24px;
+    width: 40px;
+    font-size: 11px;
+  }
+}

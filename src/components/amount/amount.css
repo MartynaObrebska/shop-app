@@ -1,0 +1,48 @@
+div.amount {
+  display: flex;
+}
+
+div.amount input {
+  box-sizing: border-box;
+  width: 70px;
+  height: 30px;
+  margin: 0;
+  text-align: center;
+  border: 1px solid #555;
+  font-size: 14px;
+}
+
+button#minus {
+  border-right: 0;
+  border-radius: 10px 0% 0% 10px;
+}
+
+button#plus {
+  border-left: 0;
+  border-radius: 0% 10px 10px 0%;
+}
+
+button.disabled {
+  opacity: 0.3;
+}
+
+@media (max-width: 800px) {
+  div.amount input {
+    width: 50px;
+    height: 24px;
+  }
+  button#plus,
+  button#minus {
+    width: 24px;
+  }
+}
+
+@media (max-width: 350px) {
+  div.amount input {
+    width: 30px;
+  }
+  button#plus,
+  button#minus {
+    width: 24px;
+  }
+}

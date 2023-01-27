@@ -1,0 +1,34 @@
+div.counter {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+span.price {
+  width: 80px;
+  text-align: center;
+}
+
+button.remove {
+  color: #ddd;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  inline-size: 30px;
+}
+
+button.remove:hover,
+button.active {
+  color: #555;
+}
+
+@media (max-width: 800px) {
+  div.counter {
+    max-width: 350px;
+  }
+
+  span.price {
+    width: 60px;
+  }
+}

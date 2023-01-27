@@ -1,0 +1,21 @@
+div.shoppingBasket h2 {
+  font-size: 24px;
+}
+
+div.shoppingBasket div.items {
+  margin-top: 50px;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  div.shoppingBasket h2 {
+    font-size: 18px;
+  }
+}
